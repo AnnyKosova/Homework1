@@ -19,7 +19,7 @@ body {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
 }
-.top {
+.header {
     height: 800px;
     background-color: rgb(225, 255, 143);
     background-image: url(img/star1.png), url(img/star2.png), url(img/star3big.svg);
@@ -27,7 +27,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.top__title {
+.header__title {
     color: rgb(32, 32, 39);
     font-size: 64px;
     font-weight: 700;
@@ -37,7 +37,7 @@ body {
     padding-top: 196px;
     padding-bottom: 24px;
 }
-.top__text {
+.header__text {
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
@@ -46,7 +46,7 @@ body {
     max-width: 719px;
     padding-bottom: 48px;
 }
-.top__btn {
+.header__btn {
     box-sizing: border-box;
     border: 1px solid rgb(32, 32, 39);
     border-radius: 60px;
@@ -63,7 +63,7 @@ body {
     cursor: pointer;
     margin-bottom: 156px;
 }
-.top__btn:hover {
+.header__btn:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     transition: 0.5s ease;
