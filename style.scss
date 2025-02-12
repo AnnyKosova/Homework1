@@ -170,7 +170,10 @@ body {
         border-radius: 53px;
         background: rgb(247, 247, 247);
         width: 108px;
-        padding: 16px 8px 16px 8px; 
+        min-height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
     }
     &__itemlabel {
         padding-top: 16px;
@@ -211,7 +214,7 @@ body {
         z-index: 2;
         display: flex;
         flex-direction: row-reverse;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
     &__product_item {
@@ -221,7 +224,7 @@ body {
         z-index: 2;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly; 
+        justify-content: space-between; 
     }
 
     
@@ -235,6 +238,9 @@ body {
     padding-bottom: 48px;
     padding-left: 48px;
     padding-right: 48px;
+}
+.minigames__itemname_quiz {
+    padding-right: 133px;
 }
 .minigames__caption {
     color: rgb(32, 32, 39);
@@ -253,6 +259,10 @@ body {
     letter-spacing: 0px;
     text-align: left;
     padding-bottom: 36px;
+    max-width: 420px;
+}
+.minigames__text_6 {
+    max-width: 496px;
 }
 .minigames__btn {
     border-radius: 60px;
