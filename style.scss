@@ -67,6 +67,9 @@ body {
         color: rgb(0, 0, 0);
         transition: 0.5s ease;
     }
+    &__Mob-btn {
+        display: none;
+    }
 }
 
 .strip {

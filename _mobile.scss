@@ -23,12 +23,28 @@
             margin-right: 23px;
         }
         &__btn {
+            display: none;
+        }
+        &__Mob-btn {
+            box-sizing: border-box;
+            border: 1px solid rgb(32, 32, 39);
+            border-radius: 60px;
+            background: rgb(32, 32, 39);
+            color: rgb(255, 255, 255);
             font-size: 16px;
             width: 285px;
             height: 55px;
             margin-left: 29px;
             margin-right: 29px;
             margin-bottom: 131px;
+            line-height: 141.69%;
+            letter-spacing: 0%;
+            text-align: center;
+            font-family: inherit;
+            cursor: pointer;
+        }
+        &__Mob-btn {
+            display: inline-block;
         }
     }
     .strip {
@@ -46,10 +62,60 @@
         display: none;
     }
     .minigames {
-        display: none;
+        padding-bottom: 48px;
     }
+    .minigames-main {
+        gap: 24px;
+    }
+    .minigames-main__product {
+        max-width : 342px;
+        flex-direction: column;
+    }
+    .minigames__title {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .minigames__itemname {
+        padding-top: 29px;
+        padding-left: 29px;
+        padding-right: 29px;
+        padding-bottom: 32px;
+    }
+    .minigames__caption {
+        font-size: 32px;
+        line-height: 39px;
+        padding-bottom: 16px;
+    }
+    .minigames__text {
+        font-size: 16px;
+        line-height: 20px;
+        padding-bottom: 32px;
+        max-width: 282px;
+    }
+    .minigames__text_6 {
+        max-width: 244px;
+    }
+    .minigames__btn {
+        width: 285px;
+        height: 55px;
+        font-size: 16px;
+    }
+    .subject {
+        font-size: 40px;
+        line-height: 49px;
+    }
+   .minigames__itemname_quiz {
+    padding-right: 23px;
+   }
+       
+    
     .footer {
-        display: none;
+        height: 100px;
+        &__text {
+            font-size: 16px;
+            line-height: 20px;
+            padding-top: 40px;
+        }
     }
 
 
