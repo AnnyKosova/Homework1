@@ -26,6 +26,7 @@ body {
   background-image: url(img/star1.png), url(img/star2.png), url(img/star3big.svg);
   background-position: 63px 69px, calc(100% - 344px) calc(100% - 149px), 240% -335px;
   background-repeat: no-repeat;
+  transition: 0.5s ease;
 }
 .header__title {
   color: rgb(32, 32, 39);
@@ -49,9 +50,9 @@ body {
 .header__btn {
   box-sizing: border-box;
   border: 1px solid rgb(32, 32, 39);
-  border-radius: 60px;
   background: rgb(32, 32, 39);
   color: rgb(255, 255, 255);
+  border-radius: 60px;
   font-size: 24px;
   font-weight: 600;
   line-height: 141.69%;
