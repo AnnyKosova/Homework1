@@ -78,11 +78,13 @@ body {
     height: 90px;
     background: rgb(188, 236, 48);
     padding: 27px 49px;
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     gap: 51px;
     overflow: hidden;
+    position: relative;
+    max-width: 100%;
 
     &__text {
         color: rgb(32, 32, 39);
@@ -93,8 +95,32 @@ body {
         text-align: left;
         text-transform: uppercase;
         white-space: nowrap;
+        position: relative;
+        z-index: 1;
     }
-
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        pointer-events: none; 
+        z-index: 0;
+    
+    }
+    &__container {
+        display: flex;
+        gap: 51px;
+        animation: scroll 90s linear infinite; 
+    }
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 .games {
@@ -304,5 +330,6 @@ body {
 }
 
 @import 'mobile';
+@import 'tablet';
 
 

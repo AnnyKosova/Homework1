@@ -38,13 +38,8 @@
     const headingEl = document.querySelector('.heading');     
     const btnEl = document.querySelector('.btn');
     btnEl.addEventListener('click', () => {
-        if (headingEl.classList.contains('hidden')) {
-            headingEl.classList.remove('hidden');
-            btnEl.textContent = 'Скрыть';
-        } else {
-            headingEl.classList.add('hidden');
-            btnEl.textContent = 'Показать';
-        }
+        headingEl.classList.toggle('hidden'); 
+        btnEl.textContent = headingEl.classList.contains('hidden') ? 'Показать' : 'Скрыть'; 
     });
 
 
@@ -66,16 +61,20 @@
     });
 
     const addBtnEl = document.querySelector('.add-btn');
-    const newParagraph = document.createElement('p');
-    newParagraph.textContent = 'Новый абзац';
     addBtnEl.addEventListener('click', () => {
-        document.body.appendChild(newParagraph);
+        const newParagraph = document.createElement('p'); 
+        newParagraph.textContent = 'Новый абзац';
+        document.body.appendChild(newParagraph); 
     });
 
     const deleteBtnEl = document.querySelector('.delete-btn');
-    const descriptionEl = document.querySelector('.description');
     deleteBtnEl.addEventListener('click', () => {
-        descriptionEl.remove();
+        const descriptionEl = document.querySelector('.description'); 
+        if (descriptionEl) { 
+            descriptionEl.remove(); 
+        } else {
+            console.log('Закончились элементы.'); 
+        }
     });
    
 
