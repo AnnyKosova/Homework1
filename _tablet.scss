@@ -1,0 +1,96 @@
+
+@media (min-width: 768px) and (max-width: 833px) {
+    .center {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .header {
+        background-image: url(img/Vectormob.svg), url(img/Star2mob.png), url(img/Star3mob.svg), url(img/Star4mob.svg), url(img/Star5mob.png); 
+        background-position: 604px -84px, 45px 97px, 94px 79px, 675px 569px, 649px 533px;
+    
+        
+        &__title {
+            font-size: 52px;
+            line-height: 49px;
+            padding-top: 172px;
+            text-align: center;
+            padding-bottom: 48px;
+        }
+        &__text {
+            font-size: 26px;
+            padding-bottom: 60px;
+            text-align: center;
+            
+        }
+        &__btn {
+            display: none;
+        }
+        &__Mob-btn {
+            box-sizing: border-box;
+            border: 1px solid rgb(32, 32, 39);
+            border-radius: 60px;
+            background: rgb(32, 32, 39);
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-weight: 600;
+            width: 285px;
+            height: 55px;
+            margin-left: 216px;
+            margin-right: 29px;
+            margin-bottom: 131px;
+            line-height: 141.69%;
+            letter-spacing: 0%;
+            text-align: center;
+            font-family: inherit;
+            cursor: pointer;
+        }
+        &__Mob-btn {
+            display: inline-block;
+        }
+    }
+
+    .games {
+        display: none;
+    }
+    .minigames {
+        padding-bottom: 112px;
+    }
+
+    .minigames-main__product {
+        max-width : 735px;
+        flex-direction: column;
+    }
+    .minigames-main__product_item {
+        max-width : 735px;
+        flex-direction: column;
+    }
+    .minigames__title {
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+    .minigames__btn {
+        width: 285px;
+        margin-left: 172px;
+    }
+
+}
+@media (min-width: 834px) and (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 393px);
+        padding-right: calc(50% - 393px);
+    }
+    .header {
+        background-image: url(img/star1.png), url(img/star2.png), url(img/star3big.svg);
+        background-position: 58px 70px, calc(101% - 344px) calc(101% - 149px), -778% -395px;
+    }
+    .games {
+        display: none;
+    }
+    .minigames-main__product {
+        max-width : 960px;
+        flex-direction: column;
+    }
+}
+
+
+

@@ -4,15 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .hidden {
+            display: none; 
+        }
+    </style>
 </head>
 <body>
-    <h1>Страница для выполнения домашний заданий</h1>
-    <p>Не игры</p>
+    <h1 class="heading">Задание 1</h1>
+    <button class="btn">Скрыть</button>
+
+    <p class="text">Задание 2</p>
+    <button class="second-task">Изменить цвет</button>
+
+    <h1 class="headline">Задание 3</h1>
+    <button class="third-task">Изменить текст</button>
+    
+    <p class="description">Задание 4</p>
+    <p class="description">Задание 4</p>
+    <p class="description">Задание 4</p>
+
+    <button class="add-btn">Добавить элемент</button>
+
+    <button class="delete-btn">Удалить элемент</button>
+
+
 
     
     
 
 
-    <script src="testHW-8.js"></script>
+    <script>
+    const headingEl = document.querySelector('.heading');     
+    const btnEl = document.querySelector('.btn');
+    btnEl.addEventListener('click', () => {
+        headingEl.classList.toggle('hidden'); 
+        btnEl.textContent = headingEl.classList.contains('hidden') ? 'Показать' : 'Скрыть'; 
+    });
+
+
+    const textEl = document.querySelector('.text');
+    const secondTaskEl = document.querySelector('.second-task');
+    secondTaskEl.addEventListener('click', () => {
+        textEl.style.color = 'blue';
+    });
+
+    const headlineEl = document.querySelector('.headline');
+    const thirdTaskEl = document.querySelector('.third-task');
+    thirdTaskEl.addEventListener('click', () => {
+        headlineEl.textContent = 'Привет, мир!';
+    });
+
+    const allDescriptions = document.querySelectorAll('.description')
+    allDescriptions.forEach(description => {
+        description.textContent = 'Измененный текст'
+    });
+
+    const addBtnEl = document.querySelector('.add-btn');
+    addBtnEl.addEventListener('click', () => {
+        const newParagraph = document.createElement('p'); 
+        newParagraph.textContent = 'Новый абзац';
+        document.body.appendChild(newParagraph); 
+    });
+
+    const deleteBtnEl = document.querySelector('.delete-btn');
+    deleteBtnEl.addEventListener('click', () => {
+        const descriptionEl = document.querySelector('.description'); 
+        if (descriptionEl) { 
+            descriptionEl.remove(); 
+        } else {
+            console.log('Закончились элементы.'); 
+        }
+    });
+   
+
+    
+
+    </script>
 </body>
 </html>

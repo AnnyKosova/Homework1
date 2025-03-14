@@ -6,6 +6,7 @@
     .header {
         background-image: url(img/Vectormob.svg), url(img/Star2mob.png), url(img/Star3mob.svg), url(img/Star4mob.svg), url(img/Star5mob.png); 
         background-position: 215px -81px, 45px 113px, 94px 79px, 313px 640px, 282px 615px;
+        height: 648px;
     
         
         &__title {
@@ -54,6 +55,7 @@
 
         &__text {
             font-size: 16px;
+            line-height: 52px;
 
         }
     
