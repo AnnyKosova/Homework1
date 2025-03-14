@@ -62,11 +62,16 @@ body {
         font-family: inherit;
         cursor: pointer;
         margin-bottom: 156px; 
+        transition: 0.5s ease;
+        display: inline-flex; 
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
     }
     &__btn:hover {
         background-color: rgb(255, 255, 255);
         color: rgb(0, 0, 0);
-        transition: 0.5s ease;
+        
     }
     
     &__Mob-btn {
@@ -75,7 +80,6 @@ body {
 }
 
 .strip {
-    height: 90px;
     background: rgb(188, 236, 48);
     padding: 27px 49px;
     display: flex;
@@ -128,8 +132,8 @@ body {
     position: relative;
 }
 .games {
-    background-image: url(img/Stargames.svg);
-    background-position: 980px 95px;
+    background-image: url(img/Stargames.svg), url(img/games_star_middle.svg), url(img/games_star_small.svg);
+    background-position: 980px 95px, 48px 824px, 26px 780px;
     background-repeat: no-repeat;
 }
 .subject {
@@ -308,11 +312,11 @@ body {
     text-align: center;
     font-family: inherit;
     cursor: pointer;
+    transition: 0.5s ease;
 }
 .minigames__btn:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    transition: 0.5s ease;
 }
 .footer {
     height: 150px;
