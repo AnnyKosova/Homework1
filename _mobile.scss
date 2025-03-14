@@ -5,7 +5,7 @@
     }
     .header {
         background-image: url(img/Vectormob.svg), url(img/Star2mob.png), url(img/Star3mob.svg), url(img/Star4mob.svg), url(img/Star5mob.png); 
-        background-position: 215px -81px, 45px 113px, 94px 79px, 313px 640px, 282px 615px;
+        background-position: 215px -81px, 45px 113px, 94px 79px, 313px 586px, 282px 552px;
         height: 648px;
     
         
@@ -43,6 +43,17 @@
             text-align: center;
             font-family: inherit;
             cursor: pointer;
+            display: inline-block; 
+            text-decoration: none;
+            position: relative;
+            
+            &::before {
+                content: '';
+                display: inline-block;
+                height: 100%;
+                vertical-align: middle;
+              }
+            
         }
         &__Mob-btn {
             display: inline-block;
@@ -50,7 +61,7 @@
     }
     .strip {
         height: 52px;
-        padding: 16px 24px;
+        padding: 0;
         gap: 28px;
 
         &__text {
@@ -101,6 +112,11 @@
         width: 285px;
         height: 55px;
         font-size: 16px;
+        transition: 0.5s ease;
+    }
+    .minigames__btn:hover {
+        background-color: transparent;
+        color: inherit;
     }
     .subject {
         font-size: 40px;

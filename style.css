@@ -63,18 +63,21 @@ body {
   font-family: inherit;
   cursor: pointer;
   margin-bottom: 156px;
+  transition: 0.5s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 .header__btn:hover {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  transition: 0.5s ease;
 }
 .header__Mob-btn {
   display: none;
 }
 
 .strip {
-  height: 90px;
   background: rgb(188, 236, 48);
   padding: 27px 49px;
   display: flex;
@@ -126,8 +129,8 @@ body {
 }
 
 .games {
-  background-image: url(img/Stargames.svg);
-  background-position: 980px 95px;
+  background-image: url(img/Stargames.svg), url(img/games_star_middle.svg), url(img/games_star_small.svg);
+  background-position: 980px 95px, 48px 824px, 26px 780px;
   background-repeat: no-repeat;
 }
 
@@ -309,12 +312,12 @@ body {
   text-align: center;
   font-family: inherit;
   cursor: pointer;
+  transition: 0.5s ease;
 }
 
 .minigames__btn:hover {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  transition: 0.5s ease;
 }
 
 .footer {
@@ -338,7 +341,7 @@ body {
   }
   .header {
     background-image: url(img/Vectormob.svg), url(img/Star2mob.png), url(img/Star3mob.svg), url(img/Star4mob.svg), url(img/Star5mob.png);
-    background-position: 215px -81px, 45px 113px, 94px 79px, 313px 640px, 282px 615px;
+    background-position: 215px -81px, 45px 113px, 94px 79px, 313px 586px, 282px 552px;
     height: 648px;
   }
   .header__title {
@@ -375,13 +378,22 @@ body {
     text-align: center;
     font-family: inherit;
     cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+  }
+  .header__Mob-btn::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
   }
   .header__Mob-btn {
     display: inline-block;
   }
   .strip {
     height: 52px;
-    padding: 16px 24px;
+    padding: 0;
     gap: 28px;
   }
   .strip__text {
@@ -429,6 +441,11 @@ body {
     width: 285px;
     height: 55px;
     font-size: 16px;
+    transition: 0.5s ease;
+  }
+  .minigames__btn:hover {
+    background-color: transparent;
+    color: inherit;
   }
   .subject {
     font-size: 40px;
@@ -488,6 +505,15 @@ body {
     text-align: center;
     font-family: inherit;
     cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+  }
+  .header__Mob-btn::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
   }
   .header__Mob-btn {
     display: inline-block;
